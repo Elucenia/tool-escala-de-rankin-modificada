@@ -1,0 +1,46 @@
+[
+  {
+    "label": "Independente com limitações leves: mRS 2",
+    "input": {
+      "mrs": "2"
+    },
+    "expected": {
+      "score": 2,
+      "level": "low",
+      "verdict": "independente"
+    },
+    "originalInput": {
+      "mrs": "2"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+    "input": {
+      "mrs": "3"
+    },
+    "expected": {
+      "score": 3,
+      "level": "mid"
+    },
+    "originalInput": {
+      "mrs": "3"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Acamado e incontinente: mRS 5",
+    "input": {
+      "mrs": "5"
+    },
+    "expected": {
+      "score": 5,
+      "level": "high",
+      "verdict": "grave"
+    },
+    "originalInput": {
+      "mrs": "5"
+    },
+    "expandedZeroOptions": []
+  }
+]

@@ -1,0 +1,252 @@
+{
+  "tool": {
+    "id": "escala-de-rankin-modificada",
+    "title": "Escala de Rankin modificada (mRS)",
+    "short": "Grau de incapacidade após o AVC",
+    "spec": [
+      "neurologia",
+      "medicina-fisica-e-reabilitacao",
+      "neurocirurgia"
+    ],
+    "tier": 1,
+    "desc": "Escala de Rankin modificada (mRS): classifique a incapacidade funcional após AVC de 0 (sem sintomas) a 6 (óbito), o desfecho usado nos estudos de AVC.",
+    "lead": "Classifica a incapacidade global e a dependência depois de um AVC ou outra lesão neurológica. É o principal desfecho funcional dos ensaios clínicos em AVC.",
+    "fields": [
+      [
+        "mrs",
+        "Situação atual do paciente",
+        "sel",
+        {
+          "opts": {
+            "0": "0 – Sem sintomas",
+            "1": "1 – Sem incapacidade significativa: faz todas as atividades habituais, apesar dos sintomas",
+            "2": "2 – Incapacidade leve: não faz todas as atividades prévias, mas cuida de si sem ajuda",
+            "3": "3 – Incapacidade moderada: precisa de alguma ajuda, mas anda sem auxílio de outra pessoa",
+            "4": "4 – Incapacidade moderadamente grave: não anda nem cuida do corpo sem ajuda",
+            "5": "5 – Incapacidade grave: acamado, incontinente, precisa de cuidado constante",
+            "6": "6 – Óbito"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Escala de Rankin modificada",
+      "unit": "na escala de 0 a 6",
+      "bands": [
+        [
+          0,
+          "low",
+          "Sem sintomas",
+          ""
+        ],
+        [
+          1,
+          "low",
+          "Sem incapacidade significativa",
+          "mRS 0 a 2: desfecho funcional favorável (independência)."
+        ],
+        [
+          2,
+          "low",
+          "Incapacidade leve: independente",
+          "mRS 0 a 2: desfecho funcional favorável (independência)."
+        ],
+        [
+          3,
+          "mid",
+          "Incapacidade moderada: dependência parcial",
+          ""
+        ],
+        [
+          4,
+          "high",
+          "Incapacidade moderadamente grave: dependente",
+          ""
+        ],
+        [
+          5,
+          "high",
+          "Incapacidade grave: dependência total",
+          ""
+        ],
+        [
+          6,
+          "high",
+          "Óbito",
+          ""
+        ]
+      ]
+    },
+    "formula": "<p>Escolha a categoria que melhor descreve o paciente. Não há soma: o resultado é o próprio grau (0 a 6).</p>",
+    "table": [
+      [
+        "mRS",
+        "Descrição"
+      ],
+      [
+        "0",
+        "Sem sintomas"
+      ],
+      [
+        "1",
+        "Sintomas sem incapacidade significativa"
+      ],
+      [
+        "2",
+        "Incapacidade leve, independente"
+      ],
+      [
+        "3",
+        "Incapacidade moderada, anda sem ajuda"
+      ],
+      [
+        "4",
+        "Incapacidade moderadamente grave"
+      ],
+      [
+        "5",
+        "Incapacidade grave"
+      ],
+      [
+        "6",
+        "Óbito"
+      ]
+    ],
+    "tips": [
+      "Registre a mRS <strong>pré-AVC</strong> na admissão: muitos protocolos de reperfusão e ensaios exigem mRS prévia de 0 a 2.",
+      "A entrevista estruturada (perguntas padronizadas sobre ajuda para andar, cuidar do corpo e atividades habituais) reduz a discordância entre avaliadores, como mostrou a validação brasileira.",
+      "O desfecho usual é a mRS em 90 dias: “favorável” costuma ser 0 a 2, e “excelente”, 0 a 1.",
+      "A escala mede incapacidade global: um déficit isolado da mão em um músico pode ser mRS 2, enquanto a mesma lesão em outra pessoa pode ser mRS 1."
+    ],
+    "sources": [
+      [
+        "van Swieten JC et al. Interobserver agreement for the assessment of handicap in stroke patients. Stroke, 1988.",
+        "https://doi.org/10.1161/01.STR.19.5.604"
+      ],
+      [
+        "Cincura C et al. Validation of the National Institutes of Health Stroke Scale, Modified Rankin Scale and Barthel Index in Brazil: the role of cultural adaptation and structured interviewing. Cerebrovasc Dis, 2009.",
+        "https://doi.org/10.1159/000177918"
+      ]
+    ],
+    "cases": [
+      [
+        "Independente com limitações leves: mRS 2",
+        {
+          "mrs": "2"
+        },
+        {
+          "score": 2,
+          "level": "low",
+          "verdict": "independente"
+        }
+      ],
+      [
+        "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        {
+          "mrs": "3"
+        },
+        {
+          "score": 3,
+          "level": "mid"
+        }
+      ],
+      [
+        "Acamado e incontinente: mRS 5",
+        {
+          "mrs": "5"
+        },
+        {
+          "score": 5,
+          "level": "high",
+          "verdict": "grave"
+        }
+      ]
+    ],
+    "batch": "neuro-mente",
+    "kind": "Escore",
+    "config": {
+      "unit": "na escala de 0 a 6",
+      "label": "Escala de Rankin modificada",
+      "fields": [
+        [
+          "mrs",
+          "sel",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Sem sintomas",
+          ""
+        ],
+        [
+          1,
+          "low",
+          "Sem incapacidade significativa",
+          "mRS 0 a 2: desfecho funcional favorável (independência)."
+        ],
+        [
+          2,
+          "low",
+          "Incapacidade leve: independente",
+          "mRS 0 a 2: desfecho funcional favorável (independência)."
+        ],
+        [
+          3,
+          "mid",
+          "Incapacidade moderada: dependência parcial",
+          ""
+        ],
+        [
+          4,
+          "high",
+          "Incapacidade moderadamente grave: dependente",
+          ""
+        ],
+        [
+          5,
+          "high",
+          "Incapacidade grave: dependência total",
+          ""
+        ],
+        [
+          6,
+          "high",
+          "Óbito",
+          ""
+        ]
+      ]
+    },
+    "areaId": "neuro-mente",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/neuro-mente.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/neuro-mente.php",
+    "sha256": "3ce3a7987a3ec63938e5f21d8d24ec7f7f8880c1b54458ef7046807a89221cac",
+    "bytes": 102818
+  },
+  "clinicalValidation": "not-performed"
+}
