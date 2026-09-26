@@ -1,11 +1,11 @@
-/* tool-escala-de-rankin-modificada · Elucenia · https://github.com/Elucenia/tool-escala-de-rankin-modificada
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-escala-de-rankin-modificada · ELUCENIA · https://github.com/Elucenia/tool-escala-de-rankin-modificada
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escala-de-rankin-modificada","title":"Escala de Rankin modificada (mRS)","fields":[["mrs","Situação atual do paciente","sel",{"opts":{"0":"0 – Sem sintomas","1":"1 – Sem incapacidade significativa: faz todas as atividades habituais, apesar dos sintomas","2":"2 – Incapacidade leve: não faz todas as atividades prévias, mas cuida de si sem ajuda","3":"3 – Incapacidade moderada: precisa de alguma ajuda, mas anda sem auxílio de outra pessoa","4":"4 – Incapacidade moderadamente grave: não anda nem cuida do corpo sem ajuda","5":"5 – Incapacidade grave: acamado, incontinente, precisa de cuidado constante","6":"6 – Óbito"}}]],"config":{"unit":"na escala de 0 a 6","label":"Escala de Rankin modificada","fields":[["mrs","sel",0]],"bands":[[0,"low","Sem sintomas",""],[1,"low","Sem incapacidade significativa","mRS 0 a 2: desfecho funcional favorável (independência)."],[2,"low","Incapacidade leve: independente","mRS 0 a 2: desfecho funcional favorável (independência)."],[3,"mid","Incapacidade moderada: dependência parcial",""],[4,"high","Incapacidade moderadamente grave: dependente",""],[5,"high","Incapacidade grave: dependência total",""],[6,"high","Óbito",""]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
