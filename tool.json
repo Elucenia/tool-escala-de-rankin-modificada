@@ -3,14 +3,14 @@
     "id": "escala-de-rankin-modificada",
     "title": "Escala de Rankin modificada (mRS)",
     "short": "Grau de incapacidade após o AVC",
+    "desc": "Escala de Rankin modificada (mRS): classifique a incapacidade funcional após AVC de 0 (sem sintomas) a 6 (óbito), o desfecho usado nos estudos de AVC.",
+    "lead": "Classifica a incapacidade global e a dependência depois de um AVC ou outra lesão neurológica. É o principal desfecho funcional dos ensaios clínicos em AVC.",
+    "kind": "Escore",
     "spec": [
       "neurologia",
       "medicina-fisica-e-reabilitacao",
       "neurocirurgia"
     ],
-    "tier": 1,
-    "desc": "Escala de Rankin modificada (mRS): classifique a incapacidade funcional após AVC de 0 (sem sintomas) a 6 (óbito), o desfecho usado nos estudos de AVC.",
-    "lead": "Classifica a incapacidade global e a dependência depois de um AVC ou outra lesão neurológica. É o principal desfecho funcional dos ensaios clínicos em AVC.",
     "fields": [
       [
         "mrs",
@@ -29,95 +29,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Escala de Rankin modificada",
-      "unit": "na escala de 0 a 6",
-      "bands": [
-        [
-          0,
-          "low",
-          "Sem sintomas",
-          ""
-        ],
-        [
-          1,
-          "low",
-          "Sem incapacidade significativa",
-          "mRS 0 a 2: desfecho funcional favorável (independência)."
-        ],
-        [
-          2,
-          "low",
-          "Incapacidade leve: independente",
-          "mRS 0 a 2: desfecho funcional favorável (independência)."
-        ],
-        [
-          3,
-          "mid",
-          "Incapacidade moderada: dependência parcial",
-          ""
-        ],
-        [
-          4,
-          "high",
-          "Incapacidade moderadamente grave: dependente",
-          ""
-        ],
-        [
-          5,
-          "high",
-          "Incapacidade grave: dependência total",
-          ""
-        ],
-        [
-          6,
-          "high",
-          "Óbito",
-          ""
-        ]
-      ]
-    },
     "formula": "<p>Escolha a categoria que melhor descreve o paciente. Não há soma: o resultado é o próprio grau (0 a 6).</p>",
-    "table": [
-      [
-        "mRS",
-        "Descrição"
-      ],
-      [
-        "0",
-        "Sem sintomas"
-      ],
-      [
-        "1",
-        "Sintomas sem incapacidade significativa"
-      ],
-      [
-        "2",
-        "Incapacidade leve, independente"
-      ],
-      [
-        "3",
-        "Incapacidade moderada, anda sem ajuda"
-      ],
-      [
-        "4",
-        "Incapacidade moderadamente grave"
-      ],
-      [
-        "5",
-        "Incapacidade grave"
-      ],
-      [
-        "6",
-        "Óbito"
-      ]
-    ],
-    "tips": [
-      "Registre a mRS <strong>pré-AVC</strong> na admissão: muitos protocolos de reperfusão e ensaios exigem mRS prévia de 0 a 2.",
-      "A entrevista estruturada (perguntas padronizadas sobre ajuda para andar, cuidar do corpo e atividades habituais) reduz a discordância entre avaliadores, como mostrou a validação brasileira.",
-      "O desfecho usual é a mRS em 90 dias: “favorável” costuma ser 0 a 2, e “excelente”, 0 a 1.",
-      "A escala mede incapacidade global: um déficit isolado da mão em um músico pode ser mRS 2, enquanto a mesma lesão em outra pessoa pode ser mRS 1."
-    ],
     "sources": [
       [
         "van Swieten JC et al. Interobserver agreement for the assessment of handicap in stroke patients. Stroke, 1988.",
@@ -126,6 +38,10 @@
       [
         "Cincura C et al. Validation of the National Institutes of Health Stroke Scale, Modified Rankin Scale and Barthel Index in Brazil: the role of cultural adaptation and structured interviewing. Cerebrovasc Dis, 2009.",
         "https://doi.org/10.1159/000177918"
+      ],
+      [
+        "NINDS C13230 version 3. Modified Rankin Scale score: official current permissible values 0–6.",
+        "https://cde.nlm.nih.gov/deView?tinyId=1Ff4qmrHH1C"
       ]
     ],
     "cases": [
@@ -162,63 +78,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "na escala de 0 a 6",
-      "label": "Escala de Rankin modificada",
-      "fields": [
-        [
-          "mrs",
-          "sel",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Sem sintomas",
-          ""
-        ],
-        [
-          1,
-          "low",
-          "Sem incapacidade significativa",
-          "mRS 0 a 2: desfecho funcional favorável (independência)."
-        ],
-        [
-          2,
-          "low",
-          "Incapacidade leve: independente",
-          "mRS 0 a 2: desfecho funcional favorável (independência)."
-        ],
-        [
-          3,
-          "mid",
-          "Incapacidade moderada: dependência parcial",
-          ""
-        ],
-        [
-          4,
-          "high",
-          "Incapacidade moderadamente grave: dependente",
-          ""
-        ],
-        [
-          5,
-          "high",
-          "Incapacidade grave: dependência total",
-          ""
-        ],
-        [
-          6,
-          "high",
-          "Óbito",
-          ""
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -227,17 +86,609 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:53:44.546Z",
+      "total": 7,
+      "passed": 7,
+      "sourceRowCount": 7,
+      "uniqueApiInputCount": 7,
+      "sourceContextCount": 7,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "scope": "Identity of seven already assigned current NINDS category codes0–6. Original1988 six-grade0–5 study is not mislabelled as the current grade6 source.",
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "d3c2e6d7be5eb986301e62d961c6927f052ff81921f9bc9e2fac3c2baadd2416",
+        "total": 7,
+        "bankRowCount": 7,
+        "uniqueApiInputCount": 7,
+        "sourceContextCount": 7,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final30.json",
+            "sha256": "7767013002c928ad8b35fabfec35fa3edde886d78f8152cfb3624a112e1732a6"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final30.json",
+            "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+          "sha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0"
+        },
+        "packagingRequirement": "All bounded raw-only rows byte exact, original202 expectations and separate1178-peer witness receipt preserved"
+      },
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/six-primary-source-review-final30.json",
+            "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+          },
+          "item": {
+            "id": "escala-de-rankin-modificada",
+            "sourceIds": [
+              "rankin-ninds-c13230-v3",
+              "rankin-1988-abstract"
+            ],
+            "executedScope": "Identity of seven already assigned current NINDS category codes0–6. Original1988 six-grade0–5 study is not mislabelled as the current grade6 source.",
+            "inputPopulation": "Professionally assessed disability after stroke; follow-up context and structured assessment matter.",
+            "sourceSupportedLimits": "Grade is an ordinal assessment; this implementation does not infer it from clinical observations or validate interobserver agreement.",
+            "findings": [
+              {
+                "kind": "edition-attribution",
+                "confirmed": true,
+                "field": "methodVersion",
+                "current": "Modified Rankin/van Swieten1988: grade0–6",
+                "issue": "The1988 abstract describes six grades0–5; current official NINDS CDE supports0–6. Existing limits already distinguish the variants, but methodVersion merges them.",
+                "minimalProposal": "Explicitly attribute0–6 to current NINDS C13230 version3 and retain van Swieten1988 as historical0–5 reliability evidence. No code or weights change."
+              }
+            ],
+            "unchecked": [
+              "Cincura2009 Portuguese adaptation original paper",
+              "Clinical functional rating",
+              "Favorable-outcome categorization"
+            ],
+            "current": {
+              "id": "escala-de-rankin-modificada",
+              "recordSha256": "4c1413749ff3c814e45dedc51cf7cd377ed1e4767e5140b262ff9b48e9cd7104",
+              "frozenRecordFile": "reports/review-20261003/six-primary-frozen-inputs-final30/selected-records/escala-de-rankin-modificada.json",
+              "frozenRecordSha256": "a88ec428ceabafa1dc26665cb859abdbf7c8a0c402c8337c3e8fe073d8a13c25",
+              "methodVersion": "Modified Rankin/van Swieten 1988:grau 0–6; sem soma; adaptação PTCincura 2009",
+              "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3363593/",
+              "adapters": [
+                {
+                  "file": "apps/website/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                  "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+                  "bytes": 5170,
+                  "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/website/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                  "currentSha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3"
+                },
+                {
+                  "file": "apps/dashboard/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                  "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+                  "bytes": 5170,
+                  "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/dashboard/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                  "currentSha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3"
+                },
+                {
+                  "file": "apps/command-center/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                  "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+                  "bytes": 5170,
+                  "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/command-center/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                  "currentSha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3"
+                }
+              ]
+            },
+            "clinicalApproval": "not-performed",
+            "professionalLanguageApproval": "not-performed",
+            "rightsApproval": "not-performed",
+            "fullMethodConformance": "not-performed"
+          },
+          "sources": [
+            {
+              "id": "rankin-ninds-c13230-v3",
+              "url": "https://cde.nlm.nih.gov/deView?tinyId=1Ff4qmrHH1C",
+              "edition": "Official NINDS C13230 version3 / NLM version3.1 current permissible values",
+              "access": "Official full CDE page directly read and captured HTML",
+              "document": {
+                "file": "six-primary-documents-final30/rankin-ninds-current.html",
+                "bytes": 78945,
+                "sha256": "56d250b718cdfc78fc195844666307b434660d10d7666ce5acb38c3d6ce37d20"
+              },
+              "readScope": "Permissible values and definitions0–6, including6=dead. This is an assigned-category form, not a symptoms-to-grade inference algorithm.",
+              "tableRead": true,
+              "visualPdfRead": false
+            },
+            {
+              "id": "rankin-1988-abstract",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3363593/",
+              "doi": "10.1161/01.STR.19.5.604",
+              "edition": "van Swieten et al., Stroke1988;19:604–607",
+              "access": "Primary indexed abstract read; direct reopening sometimes returned only a footer. Publisher original full article not obtained.",
+              "readScope": "100 stroke patients, two observers, six grades0–5; does not support attributing grade6 to that original study.",
+              "tableRead": false,
+              "visualPdfRead": false,
+              "unavailable": [
+                "Publisher full PDF",
+                "Two attempted mirrors were redirects/empty responses, not readable PDFs"
+              ]
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+      "evidenceSha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0",
+      "independentPeer": {
+        "status": "passed",
+        "file": "reports/review-20261003/six-source30-independent-peer-verify.json",
+        "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+        "scope": "Independent selected source expectations202 and additional1178 own witnesses; primary access limitations and clinical/rubric exclusions remain explicit.",
+        "sourcePeerInputCount": 1178,
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escala-de-rankin-modificada/calculator.js",
+          "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+          "app": "website"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escala-de-rankin-modificada/calculator.js",
+          "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+          "app": "dashboard"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escala-de-rankin-modificada/calculator.js",
+          "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+          "app": "command-center"
+        }
+      ],
+      "qualifications": [
+        "Identity of seven already assigned current NINDS category codes0–6. Original1988 six-grade0–5 study is not mislabelled as the current grade6 source.",
+        "Cincura2009 Portuguese adaptation original paper",
+        "Clinical functional rating",
+        "Favorable-outcome categorization",
+        "A technical pass is limited to the listed public raw fields. Patient examination, diagnosis, eligibility, rubric administration, prognosis, outcome, management, professional/official translation, rights and full-method conformance remain not-performed.",
+        "Four selected-code/class mapping tools are not validated as clinical raters by code-identity tests. Brown and TG18 require preaffirmed findings/diagnosis; the calculator does not establish them.",
+        "Bethesda risk means/ranges and all private clinical/mortality/recurrence outputs are excluded, even if observed in the donor report.",
+        "Three fresh Node/VM raw-only adapter replays plus original isolated Chromium observations; no fresh served UI or deployment binding.",
+        "Source28/29 and documentary-source30 recipes are separately owned; compose per ID and recalculate totals without stale whole-catalog replacement."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "mRS/NINDS C13230 versão 3: graus 0–6, sem soma; van Swieten 1988: seis graus 0–5; Cincura 2009: referência de adaptação brasileira, não reconferida nesta verificação",
+    "implementationVersion": "escala-de-rankin-modificada@native-2026-10-03+03f6473aa75b",
+    "currentMethodSource": "https://cde.nlm.nih.gov/deView?tinyId=1Ff4qmrHH1C",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Escolha a categoria que melhor descreve o paciente. Não há soma: o resultado é o próprio grau (0 a 6).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "mrs",
+            "label": "Situação atual do paciente",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 – Sem sintomas",
+              "1": "1 – Sem incapacidade significativa: faz todas as atividades habituais, apesar dos sintomas",
+              "2": "2 – Incapacidade leve: não faz todas as atividades prévias, mas cuida de si sem ajuda",
+              "3": "3 – Incapacidade moderada: precisa de alguma ajuda, mas anda sem auxílio de outra pessoa",
+              "4": "4 – Incapacidade moderadamente grave: não anda nem cuida do corpo sem ajuda",
+              "5": "5 – Incapacidade grave: acamado, incontinente, precisa de cuidado constante",
+              "6": "6 – Óbito"
+            }
+          }
+        ],
+        "hash": "71504f273f32ae513d0d7959e84a52329aba4a20e5f0238b8484a1f350c4306a"
+      },
+      "sourceEditions": [
+        {
+          "citation": "van Swieten JC et al. Interobserver agreement for the assessment of handicap in stroke patients. Stroke, 1988.",
+          "url": "https://doi.org/10.1161/01.STR.19.5.604",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Interobserver agreement for the assessment of handicap in stroke patients.",
+            "year": "1988",
+            "firstPublicationDate": "1988-05-01",
+            "doi": "10.1161/01.str.19.5.604",
+            "pmid": "3363593",
+            "journal": "Stroke",
+            "authors": "van Swieten JC, Koudstaal PJ, Visser MC, Schouten HJ, van Gijn J."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3363593/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "2aec0e246723abbee0661f52877d8f901f6b197f93173ce0231823210c4ab023",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Cincura C et al. Validation of the National Institutes of Health Stroke Scale, Modified Rankin Scale and Barthel Index in Brazil: the role of cultural adaptation and structured interviewing. Cerebrovasc Dis, 2009.",
+          "url": "https://doi.org/10.1159/000177918",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Validation of the National Institutes of Health Stroke Scale, modified Rankin Scale and Barthel Index in Brazil: the role of cultural adaptation and structured interviewing.",
+            "year": "2009",
+            "firstPublicationDate": "2008-11-28",
+            "doi": "10.1159/000177918",
+            "pmid": "19039215",
+            "pmcid": "PMC7065394",
+            "journal": "Cerebrovascular diseases (Basel, Switzerland)",
+            "authors": "Cincura C, Pontes-Neto OM, Neville IS, Mendes HF, Menezes DF, Mariano DC, Pereira IF, Teixeira LA, Jesus PA, de Queiroz DC, Pereira DF, Pinto E, Leite JP, Lopes AA, Oliveira-Filho J."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7065394/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "7da9e4b6b423833b8baeb3b7962129b6f499d5ecb31744130ca277e76ea97149",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:53:44.546Z",
+        "total": 7,
+        "passed": 7,
+        "sourceRowCount": 7,
+        "uniqueApiInputCount": 7,
+        "sourceContextCount": 7,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "scope": "Identity of seven already assigned current NINDS category codes0–6. Original1988 six-grade0–5 study is not mislabelled as the current grade6 source.",
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "d3c2e6d7be5eb986301e62d961c6927f052ff81921f9bc9e2fac3c2baadd2416",
+          "total": 7,
+          "bankRowCount": 7,
+          "uniqueApiInputCount": 7,
+          "sourceContextCount": 7,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-primary-independent-expectations-final30.json",
+              "sha256": "7767013002c928ad8b35fabfec35fa3edde886d78f8152cfb3624a112e1732a6"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-review-final30.json",
+              "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+            "sha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0"
+          },
+          "packagingRequirement": "All bounded raw-only rows byte exact, original202 expectations and separate1178-peer witness receipt preserved"
+        },
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/six-primary-source-review-final30.json",
+              "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+            },
+            "item": {
+              "id": "escala-de-rankin-modificada",
+              "sourceIds": [
+                "rankin-ninds-c13230-v3",
+                "rankin-1988-abstract"
+              ],
+              "executedScope": "Identity of seven already assigned current NINDS category codes0–6. Original1988 six-grade0–5 study is not mislabelled as the current grade6 source.",
+              "inputPopulation": "Professionally assessed disability after stroke; follow-up context and structured assessment matter.",
+              "sourceSupportedLimits": "Grade is an ordinal assessment; this implementation does not infer it from clinical observations or validate interobserver agreement.",
+              "findings": [
+                {
+                  "kind": "edition-attribution",
+                  "confirmed": true,
+                  "field": "methodVersion",
+                  "current": "Modified Rankin/van Swieten1988: grade0–6",
+                  "issue": "The1988 abstract describes six grades0–5; current official NINDS CDE supports0–6. Existing limits already distinguish the variants, but methodVersion merges them.",
+                  "minimalProposal": "Explicitly attribute0–6 to current NINDS C13230 version3 and retain van Swieten1988 as historical0–5 reliability evidence. No code or weights change."
+                }
+              ],
+              "unchecked": [
+                "Cincura2009 Portuguese adaptation original paper",
+                "Clinical functional rating",
+                "Favorable-outcome categorization"
+              ],
+              "current": {
+                "id": "escala-de-rankin-modificada",
+                "recordSha256": "4c1413749ff3c814e45dedc51cf7cd377ed1e4767e5140b262ff9b48e9cd7104",
+                "frozenRecordFile": "reports/review-20261003/six-primary-frozen-inputs-final30/selected-records/escala-de-rankin-modificada.json",
+                "frozenRecordSha256": "a88ec428ceabafa1dc26665cb859abdbf7c8a0c402c8337c3e8fe073d8a13c25",
+                "methodVersion": "Modified Rankin/van Swieten 1988:grau 0–6; sem soma; adaptação PTCincura 2009",
+                "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3363593/",
+                "adapters": [
+                  {
+                    "file": "apps/website/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                    "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+                    "bytes": 5170,
+                    "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/website/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                    "currentSha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3"
+                  },
+                  {
+                    "file": "apps/dashboard/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                    "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+                    "bytes": 5170,
+                    "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/dashboard/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                    "currentSha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3"
+                  },
+                  {
+                    "file": "apps/command-center/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                    "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+                    "bytes": 5170,
+                    "frozenFile": "reports/review-20261003/six-primary-frozen-inputs-final30/apps/command-center/private/tool-code/escala-de-rankin-modificada/calculator.js",
+                    "currentSha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3"
+                  }
+                ]
+              },
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "rightsApproval": "not-performed",
+              "fullMethodConformance": "not-performed"
+            },
+            "sources": [
+              {
+                "id": "rankin-ninds-c13230-v3",
+                "url": "https://cde.nlm.nih.gov/deView?tinyId=1Ff4qmrHH1C",
+                "edition": "Official NINDS C13230 version3 / NLM version3.1 current permissible values",
+                "access": "Official full CDE page directly read and captured HTML",
+                "document": {
+                  "file": "six-primary-documents-final30/rankin-ninds-current.html",
+                  "bytes": 78945,
+                  "sha256": "56d250b718cdfc78fc195844666307b434660d10d7666ce5acb38c3d6ce37d20"
+                },
+                "readScope": "Permissible values and definitions0–6, including6=dead. This is an assigned-category form, not a symptoms-to-grade inference algorithm.",
+                "tableRead": true,
+                "visualPdfRead": false
+              },
+              {
+                "id": "rankin-1988-abstract",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/3363593/",
+                "doi": "10.1161/01.STR.19.5.604",
+                "edition": "van Swieten et al., Stroke1988;19:604–607",
+                "access": "Primary indexed abstract read; direct reopening sometimes returned only a footer. Publisher original full article not obtained.",
+                "readScope": "100 stroke patients, two observers, six grades0–5; does not support attributing grade6 to that original study.",
+                "tableRead": false,
+                "visualPdfRead": false,
+                "unavailable": [
+                  "Publisher full PDF",
+                  "Two attempted mirrors were redirects/empty responses, not readable PDFs"
+                ]
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final30-r2.json",
+        "evidenceSha256": "e7df66479da6c2009d95bf5749234856ca16a6f41c5b60c231feab37dd7669c0",
+        "independentPeer": {
+          "status": "passed",
+          "file": "reports/review-20261003/six-source30-independent-peer-verify.json",
+          "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+          "scope": "Independent selected source expectations202 and additional1178 own witnesses; primary access limitations and clinical/rubric exclusions remain explicit.",
+          "sourcePeerInputCount": 1178,
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escala-de-rankin-modificada/calculator.js",
+            "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+            "app": "website"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escala-de-rankin-modificada/calculator.js",
+            "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+            "app": "dashboard"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escala-de-rankin-modificada/calculator.js",
+            "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+            "app": "command-center"
+          }
+        ],
+        "qualifications": [
+          "Identity of seven already assigned current NINDS category codes0–6. Original1988 six-grade0–5 study is not mislabelled as the current grade6 source.",
+          "Cincura2009 Portuguese adaptation original paper",
+          "Clinical functional rating",
+          "Favorable-outcome categorization",
+          "A technical pass is limited to the listed public raw fields. Patient examination, diagnosis, eligibility, rubric administration, prognosis, outcome, management, professional/official translation, rights and full-method conformance remain not-performed.",
+          "Four selected-code/class mapping tools are not validated as clinical raters by code-identity tests. Brown and TG18 require preaffirmed findings/diagnosis; the calculator does not establish them.",
+          "Bethesda risk means/ranges and all private clinical/mortality/recurrence outputs are excluded, even if observed in the donor report.",
+          "Three fresh Node/VM raw-only adapter replays plus original isolated Chromium observations; no fresh served UI or deployment binding.",
+          "Source28/29 and documentary-source30 recipes are separately owned; compose per ID and recalculate totals without stale whole-catalog replacement."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+      "source30DocumentaryAmendment": {
+        "at": "2026-10-04T20:48:15.780Z",
+        "scope": "Targeted documentary source/edition clarification only. No engine, field, option code, arithmetic bank, historical fixture, clinical decision or approval mutation.",
+        "sourceReview": {
+          "file": "six-primary-source-review-final30.json",
+          "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+        },
+        "sourcePeer": {
+          "file": "six-source30-independent-peer-verify.json",
+          "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+          "scope": "Independent bounded primary/classification review; not clinical/rubric/rights approval"
+        },
+        "sourceIds": [
+          "rankin-ninds-c13230-v3",
+          "rankin-1988-abstract"
+        ],
+        "previousMethodVersion": "Modified Rankin/van Swieten 1988:grau 0–6; sem soma; adaptação PTCincura 2009",
+        "previousLimits": "Classificação ordinal de incapacidade em pacientes com AVC, dependente de avaliação funcional e do tempo de seguimento. Prefira instruções estruturadas da edição adotada. A variante local 0–6 precisa ser distinguida das seis categorias descritas no resumo histórico de 1988.",
+        "previousFormula": "<p>Escolha a categoria que melhor descreve o paciente. Não há soma: o resultado é o próprio grau (0 a 6).</p>",
+        "previousCurrentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3363593/",
+        "previousSourceLimitEvidence": {
+          "checkedAt": "2026-10-04T02:52:02.858Z",
+          "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+          "sourceReviewFile": "remaining-native-population-limits-review.json",
+          "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+          "readingOutcome": "review-outcome-recorded",
+          "unresolved": [
+            "Rubrica integral do grau 6 e protocolo exato de entrevista não foram conferidos nas fontes integrais."
+          ],
+          "fullMethodConformanceReviewed": false,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed"
+        },
+        "sourceAccess": [
+          {
+            "id": "rankin-ninds-c13230-v3",
+            "url": "https://cde.nlm.nih.gov/deView?tinyId=1Ff4qmrHH1C",
+            "edition": "Official NINDS C13230 version3 / NLM version3.1 current permissible values",
+            "access": "Official full CDE page directly read and captured HTML",
+            "readScope": "Permissible values and definitions0–6, including6=dead. This is an assigned-category form, not a symptoms-to-grade inference algorithm.",
+            "tableRead": true,
+            "visualPdfRead": false
+          },
+          {
+            "id": "rankin-1988-abstract",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/3363593/",
+            "edition": "van Swieten et al., Stroke1988;19:604–607",
+            "access": "Primary indexed abstract read; direct reopening sometimes returned only a footer. Publisher original full article not obtained.",
+            "readScope": "100 stroke patients, two observers, six grades0–5; does not support attributing grade6 to that original study.",
+            "tableRead": false,
+            "visualPdfRead": false
+          }
+        ],
+        "sourceScopedTest": "Identity of seven already assigned current NINDS category codes0–6. Original1988 six-grade0–5 study is not mislabelled as the current grade6 source.",
+        "fieldsUnchanged": true,
+        "casesUnchanged": true,
+        "engineUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed",
+        "releaseApproval": "not-performed",
+        "fullMethodConformance": false
+      }
+    },
+    "limits": "Classificação ordinal de incapacidade em pacientes com AVC, dependente de avaliação funcional e do tempo de seguimento. Prefira instruções estruturadas da edição adotada. A variante local 0–6 precisa ser distinguida das seis categorias descritas no resumo histórico de 1988. Nesta verificação documental, os valores de 0 a 6 foram lidos no elemento de dados oficial NINDS C13230, versão 3. O resumo de van Swieten (1988) descreve seis graus de 0 a 5. A correspondência do código selecionado não valida a avaliação funcional, a entrevista ou a adaptação brasileira.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.858Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "A entrevista funcional e a adaptação brasileira Cincura2009 não foram reconferidas; o código0–6 do CDE atual não valida a atribuição clínica."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "source30DocumentaryAmendment": {
+        "at": "2026-10-04T20:48:15.780Z",
+        "scope": "Targeted documentary source/edition clarification only. No engine, field, option code, arithmetic bank, historical fixture, clinical decision or approval mutation.",
+        "sourceReview": {
+          "file": "six-primary-source-review-final30.json",
+          "sha256": "5f7d509b86d3456384f80df57b876433dd673581cf753397b6bfd3c27406fa1a"
+        },
+        "sourcePeer": {
+          "file": "six-source30-independent-peer-verify.json",
+          "sha256": "8363a3375f1cb04def35d9225a8df412654c0c235aeb149db94e73aaecdf2da3",
+          "scope": "Independent bounded primary/classification review; not clinical/rubric/rights approval"
+        },
+        "sourceIds": [
+          "rankin-ninds-c13230-v3",
+          "rankin-1988-abstract"
+        ],
+        "previousMethodVersion": "Modified Rankin/van Swieten 1988:grau 0–6; sem soma; adaptação PTCincura 2009",
+        "previousLimits": "Classificação ordinal de incapacidade em pacientes com AVC, dependente de avaliação funcional e do tempo de seguimento. Prefira instruções estruturadas da edição adotada. A variante local 0–6 precisa ser distinguida das seis categorias descritas no resumo histórico de 1988.",
+        "previousFormula": "<p>Escolha a categoria que melhor descreve o paciente. Não há soma: o resultado é o próprio grau (0 a 6).</p>",
+        "previousCurrentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3363593/",
+        "previousSourceLimitEvidence": {
+          "checkedAt": "2026-10-04T02:52:02.858Z",
+          "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+          "sourceReviewFile": "remaining-native-population-limits-review.json",
+          "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+          "readingOutcome": "review-outcome-recorded",
+          "unresolved": [
+            "Rubrica integral do grau 6 e protocolo exato de entrevista não foram conferidos nas fontes integrais."
+          ],
+          "fullMethodConformanceReviewed": false,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed"
+        },
+        "sourceAccess": [
+          {
+            "id": "rankin-ninds-c13230-v3",
+            "url": "https://cde.nlm.nih.gov/deView?tinyId=1Ff4qmrHH1C",
+            "edition": "Official NINDS C13230 version3 / NLM version3.1 current permissible values",
+            "access": "Official full CDE page directly read and captured HTML",
+            "readScope": "Permissible values and definitions0–6, including6=dead. This is an assigned-category form, not a symptoms-to-grade inference algorithm.",
+            "tableRead": true,
+            "visualPdfRead": false
+          },
+          {
+            "id": "rankin-1988-abstract",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/3363593/",
+            "edition": "van Swieten et al., Stroke1988;19:604–607",
+            "access": "Primary indexed abstract read; direct reopening sometimes returned only a footer. Publisher original full article not obtained.",
+            "readScope": "100 stroke patients, two observers, six grades0–5; does not support attributing grade6 to that original study.",
+            "tableRead": false,
+            "visualPdfRead": false
+          }
+        ],
+        "sourceScopedTest": "Identity of seven already assigned current NINDS category codes0–6. Original1988 six-grade0–5 study is not mislabelled as the current grade6 source.",
+        "fieldsUnchanged": true,
+        "casesUnchanged": true,
+        "engineUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed",
+        "releaseApproval": "not-performed",
+        "fullMethodConformance": false
+      }
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escala-de-rankin-modificada/calculator.js",
+    "bytes": 5170,
+    "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "946ad07ca742879d05b05efa150f99e9230e600360fce4530a717b9dccfc5701",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "382e19444436250cbc3ed8848dd4a14ced0efcc57a896fbdd48fdd0cc964e082",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "382e19444436250cbc3ed8848dd4a14ced0efcc57a896fbdd48fdd0cc964e082",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
