@@ -267,7 +267,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "mRS/NINDS C13230 versão 3: graus 0–6, sem soma; van Swieten 1988: seis graus 0–5; Cincura 2009: referência de adaptação brasileira, não reconferida nesta verificação",
-    "implementationVersion": "escala-de-rankin-modificada@native-2026-10-03+03f6473aa75b",
+    "implementationVersion": "escala-de-rankin-modificada@native-2026-10-05+c779d5e1f697",
     "currentMethodSource": "https://cde.nlm.nih.gov/deView?tinyId=1Ff4qmrHH1C",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -527,7 +527,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+      "implementationHash": "c779d5e1f6971634c401512df0755fa547d78b2cb27bb1eeefb2a0c26d9e9b38",
       "source30DocumentaryAmendment": {
         "at": "2026-10-04T20:48:15.780Z",
         "scope": "Targeted documentary source/edition clarification only. No engine, field, option code, arithmetic bank, historical fixture, clinical decision or approval mutation.",
@@ -590,7 +590,35 @@
         "rightsApproval": "not-performed",
         "releaseApproval": "not-performed",
         "fullMethodConformance": false
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escala-de-rankin-modificada@native-2026-10-03+03f6473aa75b",
+          "previousImplementationHash": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+          "implementationHash": "c779d5e1f6971634c401512df0755fa547d78b2cb27bb1eeefb2a0c26d9e9b38",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "71504f273f32ae513d0d7959e84a52329aba4a20e5f0238b8484a1f350c4306a",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Classificação ordinal de incapacidade em pacientes com AVC, dependente de avaliação funcional e do tempo de seguimento. Prefira instruções estruturadas da edição adotada. A variante local 0–6 precisa ser distinguida das seis categorias descritas no resumo histórico de 1988. Nesta verificação documental, os valores de 0 a 6 foram lidos no elemento de dados oficial NINDS C13230, versão 3. O resumo de van Swieten (1988) descreve seis graus de 0 a 5. A correspondência do código selecionado não valida a avaliação funcional, a entrevista ou a adaptação brasileira.",
     "sourceLimitEvidence": {
@@ -672,20 +700,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escala-de-rankin-modificada/calculator.js",
-    "bytes": 5170,
-    "sha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3"
+    "bytes": 5375,
+    "sha256": "c779d5e1f6971634c401512df0755fa547d78b2cb27bb1eeefb2a0c26d9e9b38"
   },
-  "sourceToolSha256": "946ad07ca742879d05b05efa150f99e9230e600360fce4530a717b9dccfc5701",
+  "sourceToolSha256": "2ce96018d7a29ec923d2d91a3113f5d0864c1d1d9f8c810402691c5cb49477fb",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "382e19444436250cbc3ed8848dd4a14ced0efcc57a896fbdd48fdd0cc964e082",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "382e19444436250cbc3ed8848dd4a14ced0efcc57a896fbdd48fdd0cc964e082",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

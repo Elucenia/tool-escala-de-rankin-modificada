@@ -1,0 +1,437 @@
+{
+  "id": "escala-de-rankin-modificada",
+  "implementationVersion": "escala-de-rankin-modificada@native-2026-10-05+c779d5e1f697",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incapacidade leve: independente",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "mRS 0 a 2: desfecho funcional favorável (independência).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incapacidade moderada: dependência parcial",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incapacidade grave: dependência total",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mild disability: independent",
+            "locale": "en",
+            "template": "documented-authored-7569e406551821f6001e"
+          },
+          "note": {
+            "text": "mRS 0 to 2: favorable functional outcome (independence).",
+            "locale": "en",
+            "template": "documented-authored-ce6256d4216d7af7e17a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate disability: partial dependence",
+            "locale": "en",
+            "template": "documented-authored-7d26aeaa4ffa6f7a88e5"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Severe disability: total dependence",
+            "locale": "en",
+            "template": "documented-authored-fca2e9d3f9be59ccd531"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Discapacidad leve: independiente",
+            "locale": "es",
+            "template": "documented-authored-7569e406551821f6001e"
+          },
+          "note": {
+            "text": "mRS 0 a 2: resultado funcional favorable (independencia).",
+            "locale": "es",
+            "template": "documented-authored-ce6256d4216d7af7e17a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Discapacidad moderada: dependencia parcial",
+            "locale": "es",
+            "template": "documented-authored-7d26aeaa4ffa6f7a88e5"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Discapacidad grave: dependencia total",
+            "locale": "es",
+            "template": "documented-authored-fca2e9d3f9be59ccd531"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Handicap léger : indépendant",
+            "locale": "fr",
+            "template": "documented-authored-7569e406551821f6001e"
+          },
+          "note": {
+            "text": "mRS 0 à 2 : issue fonctionnelle favorable (indépendance).",
+            "locale": "fr",
+            "template": "documented-authored-ce6256d4216d7af7e17a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Invalidité modérée : dépendance partielle",
+            "locale": "fr",
+            "template": "documented-authored-7d26aeaa4ffa6f7a88e5"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Invalidité sévère : dépendance totale",
+            "locale": "fr",
+            "template": "documented-authored-fca2e9d3f9be59ccd531"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichte Behinderung: unabhängig",
+            "locale": "de",
+            "template": "documented-authored-7569e406551821f6001e"
+          },
+          "note": {
+            "text": "mRS 0 bis 2: günstiges funktionelles Ergebnis (Unabhängigkeit).",
+            "locale": "de",
+            "template": "documented-authored-ce6256d4216d7af7e17a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßige Behinderung: teilweise Abhängigkeit",
+            "locale": "de",
+            "template": "documented-authored-7d26aeaa4ffa6f7a88e5"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Schwere Behinderung: vollständige Abhängigkeit",
+            "locale": "de",
+            "template": "documented-authored-fca2e9d3f9be59ccd531"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Disabilità lieve: indipendente",
+            "locale": "it",
+            "template": "documented-authored-7569e406551821f6001e"
+          },
+          "note": {
+            "text": "mRS 0 a 2: esito funzionale favorevole (indipendenza).",
+            "locale": "it",
+            "template": "documented-authored-ce6256d4216d7af7e17a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Disabilità moderata: dipendenza parziale",
+            "locale": "it",
+            "template": "documented-authored-7d26aeaa4ffa6f7a88e5"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Disabilità grave: dipendenza totale",
+            "locale": "it",
+            "template": "documented-authored-fca2e9d3f9be59ccd531"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "إعاقة خفيفة: مستقل",
+            "locale": "ar",
+            "template": "documented-authored-7569e406551821f6001e"
+          },
+          "note": {
+            "text": "mRS 0 إلى 2: نتيجة وظيفية مواتية (الاستقلال).",
+            "locale": "ar",
+            "template": "documented-authored-ce6256d4216d7af7e17a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "إعاقة متوسطة: اعتماد جزئي",
+            "locale": "ar",
+            "template": "documented-authored-7d26aeaa4ffa6f7a88e5"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "إعاقة شديدة: اعتماد كلي",
+            "locale": "ar",
+            "template": "documented-authored-fca2e9d3f9be59ccd531"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "轻度残疾：独立",
+            "locale": "zh",
+            "template": "documented-authored-7569e406551821f6001e"
+          },
+          "note": {
+            "text": "mRS 0 至 2：有利的功能结局（独立）。",
+            "locale": "zh",
+            "template": "documented-authored-ce6256d4216d7af7e17a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中度残疾：部分依赖",
+            "locale": "zh",
+            "template": "documented-authored-7d26aeaa4ffa6f7a88e5"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度残疾：完全依赖",
+            "locale": "zh",
+            "template": "documented-authored-fca2e9d3f9be59ccd531"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "軽度障害：自立",
+            "locale": "ja",
+            "template": "documented-authored-7569e406551821f6001e"
+          },
+          "note": {
+            "text": "mRS 0〜2：良好な機能的転帰（自立）。",
+            "locale": "ja",
+            "template": "documented-authored-ce6256d4216d7af7e17a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度の障害：部分的な介助が必要",
+            "locale": "ja",
+            "template": "documented-authored-7d26aeaa4ffa6f7a88e5"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度の障害：完全な介助が必要",
+            "locale": "ja",
+            "template": "documented-authored-fca2e9d3f9be59ccd531"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Independente com limitações leves: mRS 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "हल्की अक्षमता: स्वतंत्र",
+            "locale": "hi",
+            "template": "documented-authored-7569e406551821f6001e"
+          },
+          "note": {
+            "text": "mRS 0 से 2: अनुकूल कार्यात्मक परिणाम (स्वतंत्रता)।",
+            "locale": "hi",
+            "template": "documented-authored-ce6256d4216d7af7e17a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम अक्षमता: आंशिक निर्भरता",
+            "locale": "hi",
+            "template": "documented-authored-7d26aeaa4ffa6f7a88e5"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Acamado e incontinente: mRS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गंभीर अक्षमता: पूर्ण निर्भरता",
+            "locale": "hi",
+            "template": "documented-authored-fca2e9d3f9be59ccd531"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

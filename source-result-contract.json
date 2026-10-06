@@ -1,0 +1,161 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escala-de-rankin-modificada",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "dadba31e8eccba39d8c556b7f7b02e4598723d71",
+    "oldEngineSha256": "03f6473aa75b704becefbc7f769d10a344d7fe441a565077a913ad29a20caed3",
+    "currentEngineSha256": "c779d5e1f6971634c401512df0755fa547d78b2cb27bb1eeefb2a0c26d9e9b38"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Independente com limitações leves: mRS 2",
+      "input": {
+        "mrs": "2"
+      },
+      "publicOutput": {
+        "id": "escala-de-rankin-modificada",
+        "main": [
+          "2",
+          "na escala de 0 a 6"
+        ],
+        "label": "Escala de Rankin modificada",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "low",
+        "verdict": "independente"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "na escala de 0 a 6"
+        ],
+        "label": "Escala de Rankin modificada",
+        "level": "low",
+        "verdict": "Incapacidade leve: independente",
+        "note": "mRS 0 a 2: desfecho funcional favorável (independência).",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Anda sem ajuda, mas precisa de ajuda nas compras: mRS 3",
+      "input": {
+        "mrs": "3"
+      },
+      "publicOutput": {
+        "id": "escala-de-rankin-modificada",
+        "main": [
+          "3",
+          "na escala de 0 a 6"
+        ],
+        "label": "Escala de Rankin modificada",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "na escala de 0 a 6"
+        ],
+        "label": "Escala de Rankin modificada",
+        "level": "mid",
+        "verdict": "Incapacidade moderada: dependência parcial",
+        "note": "",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Acamado e incontinente: mRS 5",
+      "input": {
+        "mrs": "5"
+      },
+      "publicOutput": {
+        "id": "escala-de-rankin-modificada",
+        "main": [
+          "5",
+          "na escala de 0 a 6"
+        ],
+        "label": "Escala de Rankin modificada",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "high",
+        "verdict": "grave"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "na escala de 0 a 6"
+        ],
+        "label": "Escala de Rankin modificada",
+        "level": "high",
+        "verdict": "Incapacidade grave: dependência total",
+        "note": "",
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    }
+  ]
+}
